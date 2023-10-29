@@ -1,0 +1,911 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    letter-spacing: 0px;
+}
+
+
+/* Main page */
+header{
+    min-height: 90vh;
+    width: 100%;
+    margin: auto;
+    background-image: url(../img/NederweertGemeente.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+nav{
+    text-align: right;
+    padding-left: 0.7%;
+    padding-top: 0.3%;
+    padding-bottom: 1.5%;
+    background-color: #e6f9ff;
+}
+nav img{
+    float: left;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 19px 12px;
+    position: relative;
+    padding-top: 2%;
+    padding-right: 0.7%;
+}
+nav ul li a{
+    color: #006080;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #66d9ff;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.headerTxt{
+    width: 39%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation: RollIn 2s 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes RollIn{
+    from{top: 150px;}
+    to{top: 45%;}
+}
+
+.headerTxt h1{
+    color: #006080;
+    font-size: 60px;
+    font-weight: 900;
+}
+.headerTxt h1::first-letter{
+    text-transform: uppercase;
+}
+
+#ClickthroughButtons{
+    margin-top: 2%;
+    width: 100%;
+}
+.ClickthroughInfo{
+    margin-bottom: 2%;
+    text-align: center;
+    color: #006080;
+}
+.generalButton{
+    width: 18%;
+    float: left;
+    margin-left: 8%;
+    margin-right: 2%;
+    background-color: #e6f9ff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    transition: 0.6s;
+    font-size: 18px;
+}
+.generalButton a{
+    text-decoration: none;
+    text-align: center;
+    color: #006080;
+}
+.generalButton p:first-of-type{
+    margin-top: 2%;
+}
+.horecaButton{
+    width: 18%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #e6f9ff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    transition: 0.6s;
+    font-size: 18px;
+}
+.horecaButton a{
+    text-decoration: none;
+    text-align: center;
+    color: #006080;
+}
+.horecaButton p:first-of-type{
+    margin-top: 2%;
+}
+.historyButton{
+    width: 18%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #e6f9ff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    transition: 0.6s;
+    font-size: 18px;
+}
+.historyButton a{
+    text-decoration: none;
+    text-align: center;
+    color: #006080;
+}
+.historyButton p:first-of-type{
+    margin-top: 2%;
+}
+.sightsButton{
+    width: 18%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 8%;
+    margin-bottom: 1%;
+    background-color: #e6f9ff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    transition: 0.6s;
+    font-size: 18px;
+}
+.sightsButton a{
+    text-decoration: none;
+    text-align: center;
+    color: #006080;
+}
+.sightsButton p:first-of-type{
+    margin-top: 2%;
+}
+
+#contactInfoAndButton{
+    text-align: center;
+    color: #006080;
+    margin-bottom: 1%;
+}
+#contactInfoAndButton h1{
+    font-size: 18px;
+    margin-bottom: 1%;
+}
+.contactButton{
+    text-decoration: none;
+    border: 3px;
+    border-style: solid;
+    border-color: #ff0000;
+    border-radius: 5px;
+    border-width: 5px;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 100px;
+    font-size: 18px;
+    background: #ff0001;
+    cursor: pointer;
+}
+.contactButton:hover{
+    border-color: #6c0000;
+    background: #6c0001;
+    transition: 0.7s;
+}
+
+#CookiesMessage{
+    position: fixed;
+    bottom: 20px;
+    left: 80%;
+    right: 5%;
+    background-color: #006080;
+    border-style: solid;
+    border: 1px;
+    border-color: #006081;
+    border-radius: 5px;
+    z-index: 9999;
+    color: #fff;
+    padding: 15px;
+}
+#CookieAcceptButton{
+    margin-top: 10px;
+    padding: 15px;
+    padding-left: 15px;
+    background-color: #ccf2ff;
+    color: #006080;
+    border-style: solid;
+    border: 2px;
+    border-color: #ccf3ff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    height: 36px;
+    background-color: #e6f9ff;
+    clear: both;
+    text-align: center;
+    color: #006080;
+    line-height: 17px;
+    text-indent: 0em;
+    word-spacing: 0rem;
+    text-transform: uppercase;
+}
+footer a{
+    text-decoration: none;
+    color: #006080;
+}
+
+
+/* General info */
+.generalInfo{
+    color: #006080;
+    padding-top: 17px;
+    font-size: 17px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0;
+}
+.generalHeadText h1{
+    text-align: center;
+}
+.generalHeadText h1:last-child{
+    margin-bottom: 17px;
+}
+.generalArticleOne h1, p:last-child{
+    margin-bottom: 10px;
+}
+
+.generalArticleTwo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "Titel2 Titel2 Titel2" 
+    "p1 p1 p1"
+    "p2 p2 p2"
+    "VlaaiLijst VlaaiLijst VlaaiLijst"
+    "p3 p3 p3"
+    "Jumbo AlbertHeijn Aldi";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+.generalArticleTwo h1{
+    grid-area: Titel2;
+}
+#p1{
+    grid-area: p1;
+}
+#p2{
+    grid-area: p2;
+}
+#p3{
+    grid-area: p3;
+}
+.generalArticleTwo ol li{
+    grid-area: VlaaiLijst;
+    margin-left: 20px;
+}
+#JumboAndCaption{
+    grid-area: Jumbo;
+    text-align: center;
+    height: 420px;
+}
+#Jumbo{
+    width: 100%;
+    height: 90%;
+    border: 2px;
+    border-color: #ccf2ff;
+    border-style: solid;
+    border-radius: 10px;
+}
+#AldiAndCaption{
+    grid-area: Aldi;
+    text-align: center;
+    height: 420px;
+}
+#Aldi{
+    width: 100%;
+    height: 90%;
+    border: 2px;
+    border-color: #ccf2ff;
+    border-style: solid;
+    border-radius: 10px;
+}
+#AhAndCaption{
+    grid-area: AlbertHeijn;
+    text-align: center;
+    height: 420px;
+}
+#AlbertHeijn{
+    width: 100%;
+    height: 90%;
+    border: 2px;
+    border-color: #ccf2ff;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+
+/* Horeca */
+#HorecaMain{
+    width: 1300px;
+    margin: auto;
+}
+#HorecaHeadText{
+    margin: auto;
+    color: #006080;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+#mainContentHoreca{
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "HorecaArticleOne"
+    "HorecaArticleTwo"
+    "HorecaArticleThree"
+    "HorecaArticleFour";
+    grid-gap: 20px;
+    margin-bottom: 10px;
+}
+#HorecaArticleOne{
+    margin: auto;
+    grid-area: HorecaArticleOne;
+    grid-template-columns: 1fr 3fr;
+}
+#DiversoAndCaption{
+    text-align: center;
+    color: #006080;
+    float: left;
+}
+#Diverso{
+    width: 450px;
+    height: 300px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #006080;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#DiversoAside{
+    color: #006080;
+}
+#DiversoAside p{
+    margin-bottom: 10px;
+}
+#DiversoLink:hover{
+    color: #000;
+}
+#DiversoLink:active{
+    color: #ff0000;
+}
+#HorecaArticleTwo{
+    margin: auto;
+    grid-area: HorecaArticleTwo;
+    grid-template-columns: 3fr 1fr;
+}
+#DKWAndCaption{
+    text-align: center;
+    color: #006080;
+    float: right;
+}
+#DKW{
+    width: 550px;
+    height: 350px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #006080;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#DKWAside{
+    float: left;
+    width: 700px;
+    color: #006080;
+}
+#DKWAside p{
+    margin-bottom: 10px;
+    width: 690px;
+}
+#DKWLink:hover{
+    color: #000;
+}
+#DKWLink:active{
+    color: #ff0000;
+}
+#HorecaArticleThree{
+    grid-area: HorecaArticleThree;
+    margin: auto;
+    grid-template-columns: 1fr 3fr;
+}
+#GuulkeAndCaption{
+    text-align: center;
+    color: #006080;
+    float: left;
+}
+#Guulke{
+    width: 550px;
+    height: 350px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #006080;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#GuulkeAside{
+    color: #006080;
+}
+#GuulkeAside p{
+    margin-bottom: 10px;
+}
+#GuulkeLink:hover{
+    color: #000;
+}
+#GuulkeLink:active{
+    color: #ff0000;
+}
+#HorecaArticleFour{
+    grid-area: HorecaArticleFour;
+    margin: auto;
+    grid-template-columns: 3fr 1fr;
+}
+#FlorenceAndCaption{
+    text-align: center;
+    color: #006080;
+    float: right;
+}
+#Florence{
+    width: 550px;
+    height: 350px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #006080;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#FlorenceAside{
+    float: left;
+    width: 700px;
+    color: #006080;
+}
+#FlorenceAside p{
+    margin-bottom: 10px;
+    width: 690px;
+}
+#FlorenceLink:hover{
+    color: #000;
+}
+#FlorenceLink:active{
+    color: #ff0000;
+}
+
+
+/* History */
+#HistoryMain{
+    width: 1050px;
+    margin: auto;
+}
+#HistoryHeadText{
+    margin: auto;
+    color: #006080;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+#HistoryHeadText > p{
+    text-align: center;
+}
+#mainContentHistory{
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "HistoryArticleOne"
+    "HistoryArticleTwo";
+    grid-gap: 20px;
+    margin-bottom: 10px;
+}
+#HistoryArticleOne{
+    margin: auto;
+    grid-area: HistoryArticleOne;
+    grid-template-columns: 3fr 1fr;
+}
+#KerkAndCaption{
+    text-align: center;
+    color: #006080;
+    float: right;
+}
+#Kerk{
+    width: 300px;
+    height: 450px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #006080;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#KerkAside{
+    float: left;
+    width: 700px;
+    color: #006080;
+}
+#KerkAside p{
+    margin-bottom: 10px;
+    width: 600px;
+}
+
+#HistoryArticleTwo{
+    margin: auto;
+    grid-area: HistoryArticleTwo;
+    grid-template-columns: 1fr 3fr;
+}
+#MarieKatrienAndCaption{
+    text-align: center;
+    color: #006080;
+    float: left;
+}
+#MarieKatrien{
+    width: 350px;
+    height: 450px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #006080;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#MarieKatrienAside{
+    color: #006080;
+    width: 650px;
+    float: right;
+}
+#MarieKatrienAside p{
+    margin-bottom: 10px;
+    width: 600px;
+}
+
+
+/* Sights */
+#SightsMain{
+    width: 1250px;
+    margin: auto;
+}
+#SightsHeadText{
+    margin: auto;
+    color: #006080;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+#mainContentSights{
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "SightsArticleOne"
+    "SightsArticleTwo";
+    grid-gap: 20px;
+    margin-bottom: 10px;
+}
+#SightsArticleOne{
+    margin: auto;
+    grid-area: SightsArticleOne;
+    grid-template-columns: 3fr 1fr;
+}
+#EynderhoofAndCaption{
+    text-align: center;
+    color: #006080;
+    float: right;
+}
+#Eynderhoof{
+    width: 600px;
+    height: 350px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #006080;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#EynderhoofAside{
+    float: left;
+    width: 500px;
+    color: #006080;
+}
+#EynderhoofAside p{
+    margin-bottom: 10px;
+    width: 490px;
+}
+#EynderhoofLink:hover{
+    color: #000;
+}
+#EynderhoofLink:active{
+    color: #ff0000;
+}
+#SightsArticleTwo{
+    margin: auto;
+    grid-area: SightsArticleTwo;
+    grid-template-columns: 1fr 3fr;
+}
+#ErebegraafplaatsAndCaption{
+    text-align: center;
+    color: #006080;
+    float: left;
+}
+#Erebegraafplaats{
+    width: 600px;
+    height: 350px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #006080;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#ErebegraafplaatsAside{
+    color: #006080;
+    width: 610px;
+    float: right;
+}
+#ErebegraafplaatsAside p{
+    margin-bottom: 10px;
+}
+#ErebegraafplaatsLink:hover{
+    color: #000;
+}
+#ErebegraafplaatsLink:active{
+    color: #ff0000;
+}
+
+
+/* Contact */
+#contact{
+    padding-top: 25px;
+    width: 1460px;
+    margin: auto;
+}
+#contact h1{
+    text-align: center;
+    font-size: 30px;
+    color: #006080;
+    padding-bottom: 15px;
+}
+#quickContact{
+    margin-bottom: 46px;
+    width: 590px;
+    height: 624px;
+    float: left;
+    border-style: solid;
+    border-color: #006080;
+    border-radius: 5px;
+    background-color: #006081;
+}
+#quickInfo{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+#quickInfo p:first-child{
+    margin-top: 15%;
+}
+#quickInfo > p{
+    margin-top: 5%;
+}
+#quickInfo ul li{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+#talkBubble {
+    width: 120px;
+    height: 80px;
+    background-color: #ccf2ff;
+    position: relative;
+    left: 435px;
+    top: 130px;
+    border-radius: 10px;
+}
+#talkBubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #ccf2ff;
+    border-bottom: 13px solid transparent;
+}
+#talkBubble h1{
+    text-align: center;
+    padding-top: 20px;
+}
+#newsletterContact{
+    width: 860px;
+    height: 624px;
+    float: left;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #eaeaea;
+    background-color: #eaeaeb;
+}
+fieldset{
+    color: #006080;
+    font-size: 24px;
+    border-style: none;
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-areas: 
+    "voornaam achternaam"
+    "telefoonnummer postcode"
+    "email email"
+    "bericht bericht"
+    "verstuurKnop verstuurKnop";
+    grid-gap: 20px;
+}
+legend{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.voornaam{
+    grid-area: voornaam;
+    margin: auto;
+}
+.voornaam label{
+    font-size: 20px;
+    color: #006080;
+}
+.voornaam input{
+    display: block;
+    height: 40px;
+    width: 350px;
+    border: #006080;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#firstname{
+    padding-left: 10px;
+}
+.achternaam{
+    grid-area: achternaam;
+    margin: auto;
+}
+.achternaam label{
+    font-size: 20px;
+    color: #006080;
+}
+.achternaam input{
+    display: block;
+    height: 40px;
+    width: 350px;
+    border: #006080;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#surname{
+    padding-left: 10px;
+}
+.e-mail{
+    grid-area: email;
+    margin: auto;
+}
+.e-mail label{
+    font-size: 20px;
+    color: #006080;
+}
+.e-mail input{
+    display: block;
+    height: 40px;
+    width: 770px;
+    border: #006080;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#email{
+    padding-left: 10px;
+}
+
+.telefoonnummer{
+    grid-area: telefoonnummer;
+    margin: auto;
+}
+.telefoonnummer label{
+    font-size: 20px;
+    color: #006080;
+}
+.telefoonnummer input{
+    display: block;
+    height: 40px;
+    width: 350px;
+    border: #006080;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#PhoneNumber{
+    padding-left: 10px;
+}
+
+.postcode{
+    grid-area: postcode;
+    margin: auto;
+}
+.postcode label{
+    font-size: 20px;
+    color: #006080;
+}
+.postcode input{
+    display: block;
+    height: 40px;
+    width: 350px;
+    border: #006080;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#postalCode{
+    padding-left: 10px;
+}
+
+.bericht{
+    grid-area: bericht;
+    margin: auto;
+}
+.bericht label{
+    font-size: 20px;
+    color: #006080;
+}
+.bericht input{
+    display: block;
+    height: 180px;
+    width: 770px;
+    border-color: #006080;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.bericht input::placeholder{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#Message{
+    padding-left: 10px;
+}
+.verstuurButton{
+    grid-area: verstuurKnop;
+    margin: auto;
+}
+.verstuurButton input{
+    display: block;
+    text-decoration: none;
+    border: 3px;
+    border-style: solid;
+    border-color: #ff0000;
+    border-radius: 20px;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 50px;
+    font-size: 18px;
+    background: #ff0001;
+    cursor: pointer;
+}
+.verstuurButton input:hover{
+    border-color: #6c0000;
+    background: #6c0001;
+    transition: 0.7s;
+}
